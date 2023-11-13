@@ -3,3 +3,4 @@
 //Objectives: 
 
 # <1> Creating a turtle and screen function and change bg to black.
+# <2> Creating snake's body.
