@@ -22,3 +22,7 @@ class Snake:
             self.segments[seg_num].goto(x_new, y_new)
 
         self.segments[0].forward(mov_dist)
+
+    def up(self):
+        self.segments[0].setheading(0)
+        self.segments[0].setheading(90)
