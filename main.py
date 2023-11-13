@@ -24,9 +24,12 @@ for pos in positions:
 while is_game_on:
     screen.update()
     time.sleep(0.1)
-    for seg in segments:
-        seg.forward(20)
-
+    for seg_num in range(len(segments) - 1, 0, -1):
+        x_new = segments[seg_num - 1].xcor()
+        y_new = segments[seg_num - 1].ycor()
+        segments[seg_num].goto(x_new,y_new)
+    segments[0].forward(20)
+    segments[0].left(90)
 
 
 
