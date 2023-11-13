@@ -5,3 +5,4 @@
 # <1> Creating a turtle and screen function and change bg to black.
 # <2> Creating snake's body.
 # <3> Animating the movement of snake's body
+# <4> Making the code cleaner by making a class
