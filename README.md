@@ -6,3 +6,4 @@
 # <2> Creating snake's body.
 # <3> Animating the movement of snake's body
 # <4> Making the code cleaner by making a class
+# <5> to change direction of the snake moving with key presses
