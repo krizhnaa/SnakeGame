@@ -2,6 +2,11 @@ from turtle import Turtle
 
 positions = [(0,0), (-20, 0), (-40, 0)]
 mov_dist = 20
+up = 90
+down = 270
+right = 0
+left = 180
+
 class Snake:
     def __init__(self):
         self.segments = []
@@ -25,13 +30,17 @@ class Snake:
         self.head.forward(mov_dist)
 
     def up(self):
-        self.head.setheading(90)
+        if self.head.heading() != down:
+            self.head.setheading(up)
 
     def down(self):
-        self.head.setheading(270)
+        if self.head.heading() != up:
+            self.head.setheading(down)
 
     def right(self):
-        self.head.setheading(0)
+        if self.head.heading() != left:
+            self.head.setheading(right)
 
     def left(self):
-        self.head.setheading(180)
+        if self.head.heading() != right:
+            self.head.setheading(left)
