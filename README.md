@@ -2,4 +2,4 @@
 
 //Objectives: 
 
-# <1> 
+# <1> Creating a turtle and screen function and change bg to black.
