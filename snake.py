@@ -26,3 +26,15 @@ class Snake:
     def up(self):
         self.segments[0].setheading(0)
         self.segments[0].setheading(90)
+
+    def down(self):
+        self.segments[0].setheading(0)
+        self.segments[0].setheading(270)
+
+    def right(self):
+        self.segments[0].setheading(0)
+        self.segments[0].setheading(0)
+
+    def left(self):
+        self.segments[0].setheading(0)
+        self.segments[0].setheading(180)
