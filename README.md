@@ -11,3 +11,4 @@
 # <6> Making another food.py folder to implement food system in the game.
 # <7> Detecting collision of the snake and the food
 # <8> Creating a Scoreboard when the snake collides with the food.
+# <9> Detecting collision with the wall (Game Over)

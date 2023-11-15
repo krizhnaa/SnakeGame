@@ -15,6 +15,11 @@ snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
 
+
+def sh():
+    return snake.head
+
+
 screen.listen()
 screen.onkey(snake.up, 'Up')
 screen.onkey(snake.down, 'Down')
@@ -27,9 +32,12 @@ while is_game_on:
     time.sleep(0.1)
     snake.move()
 
-    if snake.head.distance(food) < 15:
+    if sh().distance(food) < 15:
         scoreboard.scored()
         food.refresh()
 
+    if sh().xcor() > 280 or sh().xcor() < -280 or sh().ycor() > 280 or sh().ycor() < -280:
+        scoreboard.game_over()
+        is_game_on = False
 
 screen.exitonclick()
