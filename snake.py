@@ -1,11 +1,12 @@
 from turtle import Turtle
 
-positions = [(0,0), (-20, 0), (-40, 0)]
+positions = [(0, 0), (-20, 0), (-40, 0)]
 mov_dist = 20
 up = 90
 down = 270
 right = 0
 left = 180
+
 
 class Snake:
     def __init__(self):
