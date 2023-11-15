@@ -1,6 +1,6 @@
 // Building one of my favorite old game - "Snake Game"
 
-//Objectives: 
+//Objectives:
 
 # <1> Creating a turtle and screen function and change bg to black.
 # <2> Creating snake's body.
@@ -8,3 +8,4 @@
 # <4> Making the code cleaner by making a class
 # <5> to change direction of the snake moving with key presses
     <> Also the snake should not move the opposite direction
+# <6> Making another food.py folder to implement food system in the game.
