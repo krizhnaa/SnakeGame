@@ -12,3 +12,4 @@
 # <7> Detecting collision of the snake and the food
 # <8> Creating a Scoreboard when the snake collides with the food.
 # <9> Detecting collision with the wall (Game Over)
+# <10> Final Objective : Detecting when the snake head hits the tail (Game Over)

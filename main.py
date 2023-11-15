@@ -34,7 +34,9 @@ while is_game_on:
 
     if sh().distance(food) < 15:
         scoreboard.scored()
+        snake.addtail()
         food.refresh()
+        screen.update()
 
     if sh().xcor() > 280 or sh().xcor() < -280 or sh().ycor() > 280 or sh().ycor() < -280:
         scoreboard.game_over()
