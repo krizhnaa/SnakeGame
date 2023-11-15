@@ -9,3 +9,4 @@
 # <5> to change direction of the snake moving with key presses
     <> Also the snake should not move the opposite direction
 # <6> Making another food.py folder to implement food system in the game.
+# <7> Detecting collision of the snake and the food
