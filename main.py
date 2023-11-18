@@ -39,12 +39,14 @@ while is_game_on:
         screen.update()
 
     if sh().xcor() > 280 or sh().xcor() < -280 or sh().ycor() > 280 or sh().ycor() < -280:
-        scoreboard.game_over()
-        is_game_on = False
+        scoreboard.resrt()
+        snake.restrt()
+        # is_game_on = False
 
     for segment in snake.segments[1:]:
         if sh().distance(segment) < 10:
-             scoreboard.game_over()
-             is_game_on = False
+             scoreboard.resrt()
+             snake.restrt()
+             # is_game_on = False
 
 screen.exitonclick()
