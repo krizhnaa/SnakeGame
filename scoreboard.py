@@ -23,6 +23,8 @@ class Scoreboard(Turtle):
     def resrt(self):
         if self.score > self.highscore:
             self.highscore = self.score
+            with open('high_score.txt', mode='w') as file:
+                file.write(f'highscore = {self.highscore}')
         self.score = 0
         self.update_scoreboard()
 
